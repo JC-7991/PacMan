@@ -1,7 +1,12 @@
 export default class TileMap{
 
     constructor(tileSize){
+
         this.tileSize = tileSize;
+
+        this.yellowDot = new Image();
+        this.yellowDot.src = "images/yellowDot.png";
+
     }
 
     map = [
