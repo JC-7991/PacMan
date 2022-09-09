@@ -43,6 +43,9 @@ export default class TileMap{
                     this.#drawDot(ctx, column, row, this.tileSize);
                 }
 
+                ctx.strokeStyle = 'yellow';
+                ctx.strokeRect(column * this.tileSize, row * this.tileSize, this.tileSize, this.tileSize);
+
             }
         }
 
