@@ -39,6 +39,10 @@ export default class TileMap{
                     this.#drawWall(ctx, column, row, this.tileSize);
                 }
 
+                else if(tile === 0){
+                    this.#drawDot(ctx, column, row, this.tileSize);
+                }
+
             }
         }
 
@@ -46,6 +50,10 @@ export default class TileMap{
 
     #drawWall(ctx, column, row, size){
         ctx.drawImage(this.wall, column * this.tileSize, row * this.tileSize, size, size);
+    }
+
+    #drawDot(ctx, column, row, size){
+        ctx.drawImage(this.yellowDot, column * this.tileSize, row * this.tileSize, size, size);
     }
 
     setCanvasSize(canvas){
