@@ -7,6 +7,9 @@ export default class TileMap{
         this.yellowDot = new Image();
         this.yellowDot.src = "images/yellowDot.png";
 
+        this.wall = new Image();
+        this.wall.src = "images/wall.png";
+
     }
 
     map = [
@@ -25,8 +28,13 @@ export default class TileMap{
 
     ];
 
-    draw(){
+    draw(ctx){
 
+    }
+
+    setCanvasSize(canvas){
+        canvas.width = this.map[0].length * this.tileSize;
+        canvas.height = this.map.length * this.tileSize;
     }
 
 }
