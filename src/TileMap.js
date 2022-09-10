@@ -15,7 +15,7 @@ export default class TileMap{
     map = [
 
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 1],
         [1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1],
         [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1],
         [1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1],
@@ -43,8 +43,8 @@ export default class TileMap{
                     this.#drawDot(ctx, column, row, this.tileSize);
                 }
 
-                ctx.strokeStyle = 'white';
-                ctx.strokeRect(column * this.tileSize, row * this.tileSize, this.tileSize, this.tileSize);
+                // ctx.strokeStyle = 'white';
+                // ctx.strokeRect(column * this.tileSize, row * this.tileSize, this.tileSize, this.tileSize);
 
             }
         }
@@ -57,6 +57,10 @@ export default class TileMap{
 
     #drawDot(ctx, column, row, size){
         ctx.drawImage(this.yellowDot, column * this.tileSize, row * this.tileSize, size, size);
+    }
+
+    getPacman(velocity){
+        
     }
 
     setCanvasSize(canvas){
