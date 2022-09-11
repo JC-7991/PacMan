@@ -48,7 +48,7 @@ export default class TileMap{
                 // ctx.strokeRect(column * this.tileSize, row * this.tileSize, this.tileSize, this.tileSize);
 
             }
-            
+
         }
 
     }
@@ -69,5 +69,5 @@ export default class TileMap{
         canvas.width = this.map[0].length * this.tileSize;
         canvas.height = this.map.length * this.tileSize;
     }
-
+    
 }
