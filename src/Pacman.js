@@ -22,6 +22,9 @@ export default class Pacman{
         const pacmanImage1 = new Image();
         pacmanImage1.src = "images/pac0.png";
 
+        const pacmanImage2 = new Image();
+        pacmanImage2.src = "images/pac1.png";
+
     }
 
 }
