@@ -14,7 +14,7 @@ export default class Pacman{
     }
 
     draw(ctx){
-        
+        ctx.drawImage();
     }
 
     #loadPacmanImages(){
