@@ -72,7 +72,7 @@ export default class TileMap{
 
                 if(tile === 4){
                     tile = this.map[row][column] = 0;
-                    return new Pacman();
+                    return new Pacman(column * this.tileSize, row * this.tileSize, this.tileSize, velocity, this.tileMap);
                 }
 
             }
