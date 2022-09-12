@@ -9,10 +9,15 @@ export default class Pacman{
         this.velocity = velocity;
 
         this.tileMap = tileMap;
+        this.#loadPacmanImages();
 
     }
 
     draw(ctx){
+        
+    }
+
+    #loadPacmanImages(){
         
     }
 
