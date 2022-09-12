@@ -7,8 +7,9 @@ export default class Pacman{
 
         this.tileSize = tileSize;
         this.velocity = velocity;
-        this.tileMap = tileMap;
         
+        this.tileMap = tileMap;
+
     }
 
 }
