@@ -14,7 +14,7 @@ export default class Pacman{
     }
 
     draw(ctx){
-        ctx.drawImage(this.pacmanImages[this.pacmanImageIndex]);
+        ctx.drawImage(this.pacmanImages[this.pacmanImageIndex], this.x, this.y, this.tileSize, this.tileSize);
     }
 
     #loadPacmanImages(){
