@@ -18,7 +18,10 @@ export default class Pacman{
     }
 
     #loadPacmanImages(){
-        
+
+        const pacmanImage1 = new Image();
+        pacmanImage1.src = "images/pac0.png";
+
     }
 
 }
