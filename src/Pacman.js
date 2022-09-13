@@ -64,7 +64,10 @@ export default class Pacman{
 
         // down
         if(event.keyCode == 40){
-
+            if(this.currentMovingDirection == MovingDirection.up){
+                this.currentMovingDirection == MovingDirection.down;
+            }
+            this.requestedMovingDirection = MovingDirection.down;
         }
 
         // left
