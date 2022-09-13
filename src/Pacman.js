@@ -11,6 +11,10 @@ export default class Pacman{
         this.velocity = velocity;
 
         this.tileMap = tileMap;
+
+        this.currentMovingDirection = null;
+        this.requestedMovingDirection = null;
+
         this.#loadPacmanImages();
 
     }
