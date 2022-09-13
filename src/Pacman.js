@@ -72,12 +72,18 @@ export default class Pacman{
 
         // left
         if(event.keyCode == 37){
-
+            if(this.currentMovingDirection == MovingDirection.right){
+                this.currentMovingDirection == MovingDirection.left;
+            }
+            this.requestedMovingDirection = MovingDirection.left;
         }
 
         // right
         if(event.keyCode == 39){
-
+            if(this.currentMovingDirection == MovingDirection.left){
+                this.currentMovingDirection == MovingDirection.right;
+            }
+            this.requestedMovingDirection = MovingDirection.right;
         }
 
     }
