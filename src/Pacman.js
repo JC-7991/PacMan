@@ -52,8 +52,8 @@ export default class Pacman{
 
     }
 
-    #keydown(event){
-        
+    #keydown = (event) => {
+
     }
 
 }
