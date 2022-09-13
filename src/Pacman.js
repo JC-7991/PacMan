@@ -15,6 +15,8 @@ export default class Pacman{
         this.currentMovingDirection = null;
         this.requestedMovingDirection = null;
 
+        document.addEventListener("keydown", this.#keydown)
+
         this.#loadPacmanImages();
 
     }
@@ -48,6 +50,10 @@ export default class Pacman{
 
         this.pacmanImageIndex = 0;
 
+    }
+
+    #keydown(event){
+        
     }
 
 }
