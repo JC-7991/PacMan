@@ -36,7 +36,7 @@ export default class Pacman{
             pacmanImage1,
             pacmanImage2,
             pacmanImage3,
-            pacmanImage4
+            pacmanImage4,
 
         ];
 
