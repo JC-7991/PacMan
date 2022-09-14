@@ -90,6 +90,10 @@ export default class Pacman{
     }
 
     #move(){
+
+        if(this.currentMovingDirection !== this.requestedMovingDirection){
+
+        }
         
     }
 
