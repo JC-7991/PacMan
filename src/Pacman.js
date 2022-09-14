@@ -103,6 +103,10 @@ export default class Pacman{
                 this.y -= this.velocity;
                 break;
 
+            case MovingDirection.down:
+                this.y += this.velocity;
+                break;
+
         }
 
     }
