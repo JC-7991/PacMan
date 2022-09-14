@@ -98,7 +98,11 @@ export default class Pacman{
         }
 
         switch(this.currentMovingDirection){
-            
+
+            case MovingDirection.up:
+                this.y -= this.velocity;
+                break;
+
         }
 
     }
