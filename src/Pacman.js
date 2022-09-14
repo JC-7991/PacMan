@@ -92,9 +92,11 @@ export default class Pacman{
     #move(){
 
         if(this.currentMovingDirection !== this.requestedMovingDirection){
+            if(Number.isInteger(this.x / this.tileSize) && Number.isInteger(this.y / this.tileSize)){
 
+            }
         }
-        
+
     }
 
 }
