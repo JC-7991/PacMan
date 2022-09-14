@@ -22,6 +22,7 @@ export default class Pacman{
     }
 
     draw(ctx){
+        this.#move();
         ctx.drawImage(this.pacmanImages[this.pacmanImageIndex], this.x, this.y, this.tileSize, this.tileSize);
     }
 
@@ -86,6 +87,10 @@ export default class Pacman{
             this.requestedMovingDirection = MovingDirection.right;
         }
 
+    }
+
+    #move(){
+        
     }
 
 }
