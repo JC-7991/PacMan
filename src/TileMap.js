@@ -128,7 +128,7 @@ export default class TileMap{
 
             const tile = this.map[row][column];
             if(tile === 1){
-                
+                return true;
             }
 
         }
