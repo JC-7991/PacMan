@@ -119,7 +119,9 @@ export default class TileMap{
                     break;
 
                 case MovingDirection.down:
-
+                    nextRow = y + this.tileSize;
+                    row = nextRow / this.tileSize;
+                    column = x / this.tileSize;
                     break;
 
             }
