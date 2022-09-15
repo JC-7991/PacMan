@@ -94,13 +94,9 @@ export default class Pacman{
         if(this.currentMovingDirection !== this.requestedMovingDirection){
 
             if(Number.isInteger(this.x / this.tileSize) && Number.isInteger(this.y / this.tileSize)){
-
                 if(!this.tileMap.didCollideWithEnvironment(this.x, this.y, this.requestedMovingDirection)){
                     this.currentMovingDirection = this.requestedMovingDirection;
                 }
-
-                //this.currentMovingDirection = this.requestedMovingDirection;
-
             }
 
         }
