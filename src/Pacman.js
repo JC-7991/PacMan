@@ -1,5 +1,4 @@
 import MovingDirection from "./MovingDirection.js";
-import TileMap from "./TileMap.js";
 
 export default class Pacman{
 
@@ -95,16 +94,10 @@ export default class Pacman{
         if(this.currentMovingDirection !== this.requestedMovingDirection){
 
             if(Number.isInteger(this.x / this.tileSize) && Number.isInteger(this.y / this.tileSize)){
-                if(!this.tileMap.didCollideWithEnvironment(this.x, this.y, this.requestedMovingDirection)){
-                    this.currentMovingDirection = this.requestedMovingDirection;
-                }
+                this.currentMovingDirection = this.requestedMovingDirection;
             }
 
         }
-
-        // if(this.tileMap.didCollideWithEnvironment(this.x, this.y, this.currentMovingDirection)){
-        //     return;
-        // }
 
         switch(this.currentMovingDirection){
 
