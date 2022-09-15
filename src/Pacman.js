@@ -1,5 +1,4 @@
 import MovingDirection from "./MovingDirection.js";
-//import didCollideWithEnvironment from "./TileMap.js";
 
 export default class Pacman{
 
