@@ -132,7 +132,7 @@ export default class TileMap{
             }
 
         }
-        
+        return false;  
     }
     
 }
