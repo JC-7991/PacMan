@@ -89,6 +89,7 @@ export default class TileMap{
     }
 
     didCollideWithEnvironment(x, y, direction){
+
         if(Number.isInteger(x / this.tileSize) && Number.isInteger(y / this.tileSize)){
 
             let column = 0;
@@ -98,10 +99,11 @@ export default class TileMap{
             let nextRow = 0;
 
             switch(direction){
-                
+
             }
 
         }
+        
     }
     
 }
