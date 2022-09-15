@@ -1,4 +1,5 @@
 import Pacman from "./Pacman.js";
+import MovingDirection from "./MovingDirection.js";
 
 export default class TileMap{
 
@@ -85,6 +86,20 @@ export default class TileMap{
     setCanvasSize(canvas){
         canvas.width = this.map[0].length * this.tileSize;
         canvas.height = this.map.length * this.tileSize;
+    }
+
+    didCollideWithEnvironment(x, y, direction){
+        if(Number.isInteger(x / this.tileSize) && Number.isInteger(y / this.tileSize)){
+
+            let column = 0;
+            let row = 0;
+
+            let nextColumn = 0;
+            let nextRow = 0;
+
+            
+
+        }
     }
     
 }
