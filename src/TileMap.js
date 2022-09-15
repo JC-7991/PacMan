@@ -100,6 +100,12 @@ export default class TileMap{
 
             switch(direction){
 
+                case MovingDirection.right:
+                    nextColumn = x + this.tileSize;
+                    column = nextColumn / this.tileSize;
+                    row = y / this.tileSize;
+                    break;
+
             }
 
         }
