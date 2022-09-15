@@ -112,6 +112,18 @@ export default class TileMap{
                     row = y / this.tileSize;
                     break;
 
+                case MovingDirection.right:
+                    nextColumn = x + this.tileSize;
+                    column = nextColumn / this.tileSize;
+                    row = y / this.tileSize;
+                    break;
+
+                case MovingDirection.right:
+                    nextColumn = x + this.tileSize;
+                    column = nextColumn / this.tileSize;
+                    row = y / this.tileSize;
+                    break;
+
             }
 
         }
