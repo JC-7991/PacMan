@@ -105,6 +105,10 @@ export default class Pacman{
 
         }
 
+        if(this.tileMap.didCollideWithEnvironment(this.x, this.y, this.currentMovingDirection)){
+            return;
+        }
+
         switch(this.currentMovingDirection){
 
             case MovingDirection.up:
