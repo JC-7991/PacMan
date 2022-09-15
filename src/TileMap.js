@@ -97,7 +97,9 @@ export default class TileMap{
             let nextColumn = 0;
             let nextRow = 0;
 
-            
+            switch(direction){
+                
+            }
 
         }
     }
