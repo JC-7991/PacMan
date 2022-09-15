@@ -19,12 +19,12 @@ export default class Pacman{
 
         this.#loadPacmanImages();
 
-    }
+    };
 
     draw(ctx){
         this.#move();
         ctx.drawImage(this.pacmanImages[this.pacmanImageIndex], this.x, this.y, this.tileSize, this.tileSize);
-    }
+    };
 
     #loadPacmanImages(){
 
@@ -51,7 +51,7 @@ export default class Pacman{
 
         this.pacmanImageIndex = 0;
 
-    }
+    };
 
     #keydown = (event) => {
 
@@ -87,16 +87,16 @@ export default class Pacman{
             this.requestedMovingDirection = MovingDirection.right;
         }
 
-    }
+    };
 
     #move(){
 
         if(this.currentMovingDirection !== this.requestedMovingDirection){
-
             if(Number.isInteger(this.x / this.tileSize) && Number.isInteger(this.y / this.tileSize)){
-                this.currentMovingDirection = this.requestedMovingDirection;
+                //if(!this.tileMap.didCollideWithEnvironment(this.x, this.y, this.currentMovingDirection)){
+                    this.currentMovingDirection = this.requestedMovingDirection;
+                //}
             }
-
         }
 
         switch(this.currentMovingDirection){
@@ -119,6 +119,6 @@ export default class Pacman{
 
         }
 
-    }
+    };
 
 }
