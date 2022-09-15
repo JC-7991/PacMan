@@ -1,4 +1,5 @@
 import MovingDirection from "./MovingDirection.js";
+import TileMap from "./TileMap.js";
 
 export default class Pacman{
 
@@ -101,9 +102,9 @@ export default class Pacman{
 
         }
 
-        if(this.tileMap.didCollideWithEnvironment(this.x, this.y, this.currentMovingDirection)){
-            return;
-        }
+        // if(this.tileMap.didCollideWithEnvironment(this.x, this.y, this.currentMovingDirection)){
+        //     return;
+        // }
 
         switch(this.currentMovingDirection){
 

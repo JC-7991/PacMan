@@ -105,24 +105,28 @@ export default class TileMap{
             switch(direction){
 
                 case MovingDirection.right:
+
                     nextColumn = x + this.tileSize;
                     column = nextColumn / this.tileSize;
                     row = y / this.tileSize;
                     break;
                 
                 case MovingDirection.left:
+
                     nextColumn = x - this.tileSize;
                     column = nextColumn / this.tileSize;
                     row = y / this.tileSize;
                     break;
 
                 case MovingDirection.up:
+
                     nextRow = y - this.tileSize;
                     row = nextRow / this.tileSize;
                     column = x / this.tileSize;
                     break;
 
                 case MovingDirection.down:
+                    
                     nextRow = y + this.tileSize;
                     row = nextRow / this.tileSize;
                     column = x / this.tileSize;
@@ -131,6 +135,7 @@ export default class TileMap{
             }
 
             const tile = this.map[row][column];
+
             if(tile === 1){
                 return true;
             }
